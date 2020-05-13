@@ -1,0 +1,8 @@
+{
+  "name": "VitelBot",
+  "description": "A Telegram Bot made in Python",
+  "repository": "https://github.com/vijethph/VitelBot",
+  "logo": "https://github.com/vijethph/VitelBot/logod.png",
+  "keywords": ["python", "telegram", "bot"]
+}
+
