@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/vijethph/VitelBot?color=yellow&style=flat-square)](https://github.com/vijethph/VitelBot/stargazers)
 [![GitHub license](https://img.shields.io/github/license/vijethph/VitelBot?style=flat-square)](https://github.com/vijethph/VitelBot/blob/master/LICENSE)
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-blueviolet.svg?style=flat-square)](https://www.python.org/)
-[![something-unusual](https://img.shields.io/badge/something-unusual-bluegreen.svg?style=flat-square&labelColor=blue)](https://forthebadge.com)
+[![Docker Build](https://img.shields.io/badge/docker%20build-passing-bluegreen.svg?style=for-the-badge&logo=docker&labelColor=blue&logoColor=white)](https://hub.docker.com/r/vijethph/vitelbot)
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 <br />
@@ -47,8 +47,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<a href="screenshot1.jpg"><img src="screenshot1.jpg" height="450" align="center" width="210" ></a>
-<a href="screenshot2.jpg"><img src="screenshot2.jpg" height="450" align="center" width="210" ></a>
+<center><a href="screenshot1.jpg"><img src="screenshot1.jpg" height="450" width="210" ></a>
+<a href="screenshot2.jpg"><img src="screenshot2.jpg" height="450" width="210" ></a></center>
 
 This is a Telegram Bot made with Python that uses [python-telegram-bot](https://python-telegram-bot.org) wrapper which can perform a variety of tasks, like getting a random number, a random joke, cat and dog pictures, and also memes. It can easily be accessed by Telegram Users by opening this link: [VitelBot](https://t.me/@VijethsTestingBot).
 
@@ -106,7 +106,14 @@ python main.py
 ```
 The Bot can now be used by issuing commands to it.
 
-If you wish to deploy the bot to Heroku (so that it stays online all the time), simply click 'Deploy to Heroku' badge shown above. You need to have a Heroku account for doing this. Then, in Heroku Dashboard, go to App settings, add these Environment Variables:
+Another way to install this app is to use it's Docker Image, which is available at [DockerHub](https://hub.docker.com/r/vijethph/vitelbot). [Docker](https://www.docker.com/) should be installed in your system. Just run these commands to pull the image and start the container:
+```
+docker pull vijethph/vitelbot
+docker run -p 8443:8443 -e TOKEN='yourapikey' -e MODE='dev' vijethph/vitelbot
+```
+Where `'yourapikey'` should be replaced with your API key (with single quotes).
+
+If you wish to deploy the bot to Heroku (so that it stays online all the time), simply click `'Deploy to Heroku'` badge shown above. You need to have a Heroku account for doing this. Then, in Heroku Dashboard, go to App settings, add these Environment Variables:
 ```
 key : TOKEN, value : your-API-key
 key : MODE, value : prod
