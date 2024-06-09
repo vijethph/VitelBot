@@ -2,7 +2,7 @@ bottle==0.12.20
 certifi==2023.7.22
 cffi==1.14.0
 chardet==3.0.4
-cryptography==39.0.1
+cryptography==42.0.4
 decorator==4.4.2
 future==0.18.2
 idna==3.7
