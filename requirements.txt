@@ -1,5 +1,5 @@
 bottle==0.12.20
-certifi==2023.7.22
+certifi==2024.7.4
 cffi==1.14.0
 chardet==3.0.4
 cryptography==42.0.8
